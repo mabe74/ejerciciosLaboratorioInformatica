@@ -1,5 +1,8 @@
 Algoritmo TP2_EJ1
 	
+//Se ingresa un valor de dos cifras, realizar un algoritmo que devuelva la cifra de las
+//unidades y la cifra de las decenas. Utilizar mensajes de entrada y salida adecuados.
+
 	Definir Num, Dec, Uni Como Entero
 	
 	Escribir 'Ingrese un numero de dos cifras: '

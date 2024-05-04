@@ -1,5 +1,12 @@
 Algoritmo TP2_EJ2
 	
+//Escribir un programa para que, dado un número de tres cifras, imprima la cifra
+//central. En la entrada de datos un mensaje debe decir "Indicar un número de tres cifras",
+//la salida será:
+	
+					//Valor: XXX
+					//La cifra central es: X
+	
 	Definir Num, Resto, cifraCentral Como Entero
 
 	

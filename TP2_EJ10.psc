@@ -1,4 +1,11 @@
-Algoritmo TP_EJ10
+Algoritmo TP2_EJ10
+	
+//Se ingresa un valor entero de 3 dígitos, realizar un programa que devuelva las cifras
+//por separado. la salida será:
+                                //Valor ingresado: XXX
+                                //Unidades: X
+                                //Decenas: X
+                                //Centenas: X
 	
 	Definir num, resto, cen, dec, uni Como Entero
 	

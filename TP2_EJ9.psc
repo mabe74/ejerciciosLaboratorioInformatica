@@ -1,5 +1,8 @@
 Algoritmo TP2_EJ9
 	
+//Dados la hora, minutos y los segundos de dos instantes, la computadora muestra cuantos
+//segundos contiene el intervalo que abarcan.
+
 	Definir horaIn, minIn, segIn, horaF, minF, segF Como Entero
 	Definir convHoraIn, convMinIn, convHoraF, convMinF Como Entero 
 	Definir tiempoInSeg, tiempoFseg, intervalo Como Entero
