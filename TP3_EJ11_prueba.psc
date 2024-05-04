@@ -1,8 +1,5 @@
-Algoritmo TP3_EJ11
+Algoritmo TP3_EJ11_prueba
 	
-//Dado un valor entero de tres cifras, realizar un algoritmo que devuelva el valor de
-//cada una de sus cifras ordenadas de menor a mayor.
-
 	Definir A, aux, centena, decena, unidad Como Entero
 	
 	Escribir 'Ingrese un numero entero de tres cifras: '
@@ -13,6 +10,7 @@ Algoritmo TP3_EJ11
 	decena = trunc(aux/10) //Obtiene la decena
 	unidad = aux MOD 10 //Obtiene la unidad
 	
+	// Ordenar las cifras de menor a mayor
 	Si centena <= decena Y centena <= unidad Entonces
 		Si decena <= unidad Entonces
 			Escribir centena, decena, unidad
@@ -20,21 +18,21 @@ Algoritmo TP3_EJ11
 			Escribir centena, unidad, decena
 		FinSi
 	SiNo
-		Si decena <= centena Y decena <= unidad  Entonces
-			si centena <= unidad Entonces
-				Escribir decena, unidad, centena
-			SiNo
+		Si decena <= centena Y decena <= unidad Entonces
+			Si centena <= unidad Entonces
 				Escribir decena, centena, unidad
+			SiNo
+				Escribir decena, unidad, centena
 			FinSi
-		SiNo 
-			Si 	unidad <= centena Y unidad <= decena Entonces
+		SiNo
+			Si unidad <= centena Y unidad <= decena Entonces
 				Si centena <= decena Entonces
 					Escribir unidad, centena, decena
-					
 				SiNo
 					Escribir unidad, decena, centena
 				FinSi
 			FinSi
 		FinSi
 	FinSi
+	
 FinAlgoritmo
