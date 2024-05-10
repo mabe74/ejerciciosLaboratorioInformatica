@@ -5,8 +5,9 @@ Algoritmo EJ_Grupal
 	
 	//Declaración de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, convDiasN, convDiasA, aux Como Entero
-	Definir edad Como Real
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, convAniosDiasN, convAniosDiasA Como Entero
+	Definir convMesesDiasN, convMesesDiasA, aux Como Entero
+	Definir edadAnios, edadMeses Como Real
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
 	Leer nombre  //Almacena en memoria el nombre ingresado
@@ -92,10 +93,14 @@ Algoritmo EJ_Grupal
 	//Resta un año. No se cumplió el año
 	Si mesN > mesA Entonces
 		
+		convAniosDiasN = ((anioN-1) * 365) 
+		convMesesDiasN = ((mesN-1) * 30)
 		
-		convDiasN = ((anioN-1) * 365) + ((mesN-1) * 30) + diaN
 		
+		//convDiasN = ((anioN-1) * 365) + ((mesN-1) * 30) + diaN
 		
+		convAniosDiasA = ((anioA-1) * 365) 
+		convMesesDiasA = ((mesA-1) * 30) 
 		
 	SiNo
 		
@@ -104,12 +109,15 @@ Algoritmo EJ_Grupal
 	FinSi
 	
 	
-	convDiasA = ((anioA-1) * 365) + ((mes-1) * 30) + diaA
 	
 	
-	edad = (convDiasA - convDiasN)/365
+
 	
-	Escribir 'edad: ', edad
+	
+	edadAnios = (convAniosDiasA - convAniosDiasN)/365
+	edadMeses = (convMesesDiasA - convAniosDiasN) / 30
+	
+	Escribir 'edad: ', edadAnios, edadMeses
 	
 	
 	
