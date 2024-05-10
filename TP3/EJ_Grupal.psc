@@ -5,7 +5,7 @@ Algoritmo EJ_Grupal
 	
 	//Declaración de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, edad, aux Como Entero
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, edad, convDiasN, convDiasA, aux Como Entero
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
 	Leer nombre  //Almacena en memoria el nombre ingresado
@@ -85,14 +85,30 @@ Algoritmo EJ_Grupal
 	
 	aux = anioN MOD 4 //Calcula los años bisiestos
 	
+//--------------------------------------CONVERSIÓN A DÍAS-------------------------------------
+	
+	//Conversión a días de la fecha de nacimiento
+	//Resta un año. No se cumplió el año
+	Si mesN > mesA Entonces
+		
+		
+		convDiasN = ((anioN-1) * 365) + ((mesN-1) * 30) + diaN
+		
+		
+		
+	SiNo
+		
+		
+		
+	FinSi
 	
 	
+	convDiasA = ((anioA-1) * 365) + ((mes-1) * 30) + diaA
 	
 	
+	edad = convDiasA - convDiasN
 	
-	
-	
-	
+	Escribir 'edad: ', edad
 	
 	
 	
