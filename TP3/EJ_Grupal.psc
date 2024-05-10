@@ -5,7 +5,8 @@ Algoritmo EJ_Grupal
 	
 	//Declaración de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, edad, convDiasN, convDiasA, aux Como Entero
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, convDiasN, convDiasA, aux Como Entero
+	Definir edad Como Real
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
 	Leer nombre  //Almacena en memoria el nombre ingresado
@@ -106,7 +107,7 @@ Algoritmo EJ_Grupal
 	convDiasA = ((anioA-1) * 365) + ((mes-1) * 30) + diaA
 	
 	
-	edad = convDiasA - convDiasN
+	edad = (convDiasA - convDiasN)/365
 	
 	Escribir 'edad: ', edad
 	
