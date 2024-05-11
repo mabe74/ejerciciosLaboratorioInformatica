@@ -1,8 +1,9 @@
-Algoritmo TP3_EJ11
+Algoritmo TP3_EJ12
 	
-//Dado un valor entero de tres cifras, realizar un algoritmo que devuelva el valor de
-//cada una de sus cifras ordenadas de menor a mayor.
-
+//Dado un valor entero de tres cifras, realizar un algoritmo que devuelva el un nuevo
+//valor formado con sus tres cifras ordenadas de menor a mayor. (Ejemplo: Sin ingresa el
+//numero 512, el programa debe devolver el numero 125). En la salida mostrar ambos valores.
+	
 	Definir A, aux, centena, decena, unidad Como Entero
 	
 	Escribir 'Ingrese un numero entero de tres cifras: '
@@ -38,3 +39,26 @@ Algoritmo TP3_EJ11
 		FinSi
 	FinSi
 FinAlgoritmo
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

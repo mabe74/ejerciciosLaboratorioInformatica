@@ -115,14 +115,9 @@ Algoritmo EJ_Grupal
 		
 	FinSi
 	
-	
-	
-	
-	Escribir 'Usted tiene: '
+	Escribir 'Usted tiene la edad de: '
 	Escribir 'anios: ', edadAnios
 	Escribir 'meses :', edadMeses
-	
-	
 	
 	
 	//Dato extra
