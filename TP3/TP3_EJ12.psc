@@ -9,6 +9,7 @@ Algoritmo TP3_EJ12
 	Escribir 'Ingrese un numero entero de tres cifras: '
 	Leer A
 	
+	Escribir 'El valor ingresado es:',A //Muestra a la salida el valor ingresado
 	centena = trunc(A/100) //Obtiene la centena
 	aux = A MOD 100 //Almacena el resto en la variable aux
 	decena = trunc(aux/10) //Obtiene la decena
@@ -16,24 +17,24 @@ Algoritmo TP3_EJ12
 	
 	Si centena <= decena Y centena <= unidad Entonces
 		Si decena <= unidad Entonces
-			Escribir centena, decena, unidad
+			Escribir 'El valor invertido es: ',centena, decena, unidad
 		SiNo
-			Escribir centena, unidad, decena
+			Escribir 'El valor invertido es: ',centena, unidad, decena
 		FinSi
 	SiNo
 		Si decena <= centena Y decena <= unidad  Entonces
 			si centena <= unidad Entonces
-				Escribir decena, centena, unidad
+				Escribir 'El valor invertido es: ',decena, centena, unidad
 			SiNo
-				Escribir decena, unidad, centena
+				Escribir 'El valor invertido es: ',decena, unidad, centena
 			FinSi
 		SiNo 
 			Si 	unidad <= centena Y unidad <= decena Entonces
 				Si centena <= decena Entonces
-					Escribir unidad, centena, decena
+					Escribir 'El valor invertido es: ',unidad, centena, decena
 					
 				SiNo
-					Escribir unidad, decena, centena
+					Escribir 'El valor invertido es: ',unidad, decena, centena
 				FinSi
 			FinSi
 		FinSi
