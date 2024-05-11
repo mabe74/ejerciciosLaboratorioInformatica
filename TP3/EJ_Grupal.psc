@@ -5,7 +5,7 @@ Algoritmo EJ_Grupal
 	
     //Declaracion de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux, edadAnios, edadMeses, edadDias Como Entero
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux, cantAnios, cantMeses, cantDias Como Entero
 
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
@@ -88,18 +88,18 @@ Algoritmo EJ_Grupal
 	
 	//Cacula la edad en anios, meses y dias
 	Si mesN == mesA Entonces
-		edadAnios = (anioA)-anioN
-		edadMeses = mesN-mesA
-		edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4)) //Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+		cantAnios = (anioA)-anioN
+		cantMeses = mesN-mesA
+		cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4)) //Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 	SiNo
 		Si mesN > mesA  Entonces
-			edadAnios = (anioA-1)-anioN
-			edadMeses = (12-mesN)+(mesA-1)
-			edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+			cantAnios = (anioA-1)-anioN
+			cantMeses = (12-mesN)+(mesA-1)
+			cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 		SiNo
-			edadAnios = anioA-anioN
-			edadMeses = (mesA - mesN)-1
-			edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+			cantAnios = anioA-anioN
+			cantMeses = (mesA - mesN)-1
+			cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 		FinSi
 	FinSi
 	
@@ -112,9 +112,9 @@ Algoritmo EJ_Grupal
 	
 	//Salida por consola
 	Escribir 'Usted tiene la edad de: '
-	Escribir 'anios: ',edadAnios
-	Escribir 'meses: ',edadMeses
-	Escribir 'dias: ',edadDias
+	Escribir 'anios: ',cantAnios
+	Escribir 'meses: ',cantMeses
+	Escribir 'dias: ',cantDias
 	
 	//Salida por consola. Dato extra, agregado mio.
 	Si aux == 0 Entonces
