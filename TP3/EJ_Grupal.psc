@@ -6,7 +6,7 @@ Algoritmo EJ_Grupal
     //Declaracion de variables
 	Definir nombre Como Caracter
 	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux, edadAnios, edadMeses, edadDias Como Entero
-	Definir mesesAdias Como Entero
+
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
 	Leer nombre  //Almacena en memoria el nombre ingresado
@@ -86,14 +86,15 @@ Algoritmo EJ_Grupal
 	//Cacula la edad en anios, meses y dias
 	Si mesN > mesA  Entonces
 		edadAnios = (anioA-1)-anioN
-		edadMeses = (12-mesN)+mesA
-		mesesAdias = edadMeses * 30
+		edadMeses = (12-mesN)+(mesA-1)
+		edadDias = (30-diaN)+diaA
+		
 		
 		
 	SiNo
 		edadAnios = anioA-anioN
 		edadMeses = (mesA - mesN)-1
-		mesesAdias = (30-diaN)+diaA
+		edadDias = (30-diaN)+diaA
 		
 	FinSi
 	
@@ -110,7 +111,7 @@ Algoritmo EJ_Grupal
 	Escribir 'Usted tiene la edad de: '
 	Escribir 'anios: ',edadAnios
 	Escribir 'meses: ',edadMeses
-	Escribir 'dias: ',mesesAdias
+	Escribir 'dias: ',edadDias
 	
 	
 	//Dato extra
