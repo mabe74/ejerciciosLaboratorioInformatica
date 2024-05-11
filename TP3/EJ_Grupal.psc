@@ -87,20 +87,19 @@ Algoritmo EJ_Grupal
 	aux = anioN MOD 4 //Calcula los anios bisiestos
 	
 	//Cacula la edad en anios, meses y dias
-	
 	Si mesN == mesA Entonces
 		edadAnios = (anioA)-anioN
 		edadMeses = mesN-mesA
-		edadDias = (30-diaN)+diaA 
+		edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4)) //Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 	SiNo
 		Si mesN > mesA  Entonces
 			edadAnios = (anioA-1)-anioN
 			edadMeses = (12-mesN)+(mesA-1)
-			edadDias = (30-diaN)+diaA 
+			edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 		SiNo
 			edadAnios = anioA-anioN
 			edadMeses = (mesA - mesN)-1
-			edadDias = (30-diaN)+diaA
+			edadDias = ((30-diaN)+diaA) + (trunc(edadAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 		FinSi
 	FinSi
 	
@@ -117,13 +116,13 @@ Algoritmo EJ_Grupal
 	Escribir 'meses: ',edadMeses
 	Escribir 'dias: ',edadDias
 	
-	//Dato extra
+	//Salida por consola. Dato extra, agregado mio.
 	Si aux == 0 Entonces
 		Escribir 'Usted nacio en un anio bisiesto: ', anioN
 	SiNo
 		Escribir 'Usted nacio en un anio NO bisiesto: ', anioN
 	FinSi
 	
-	Escribir '****Muchas Gracias****'
+	Escribir '                                 ****Muchas Gracias****'
 	
 FinAlgoritmo
