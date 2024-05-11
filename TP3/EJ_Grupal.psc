@@ -15,6 +15,7 @@ Algoritmo EJ_Grupal
 	
 	Escribir 'Ingrese su fecha de nacimento (dd, mm, aaaa): '//Pide ingresar la fecha de nacimiento
 	
+	Escribir 'dia:'
 	//Valida el dia ingresado
 	Leer diaN  //Almacena el d?a de nacimiento ingresado
 	Si diaN < 1 O diaN > 31 Entonces
@@ -22,6 +23,7 @@ Algoritmo EJ_Grupal
 	FinSi
 
     //Valida el mes ingresado
+	Escribir 'mes:'
 	Leer mesN //Almacena el mes de nacimiento ingresado
 	Si mesN < 1 O mesN > 12 Entonces
 		Escribir 'Ingrese un mes valido'
@@ -40,23 +42,23 @@ Algoritmo EJ_Grupal
 	FinSi
 
 	//Valida el anio ingresado
+	Escribir 'anio:'
 	Leer anioN
 	Si anioN < 1930 O anioN >2025 Entonces
 		Escribir 'Ingrese un anio valido'
 	FinSi
-//-------------------------------------FIN FECHA DE NACIMIENTO--------------------------------
-	
-	
-	
+
 //------------------------------------------FECHA ACTUAL--------------------------------------		
 	Escribir 'Ingrese la fecha actual (dd, mm, aaaa): '
 	
+	Escribir 'dia:'
 	//Valida el dia ingresado
 	Leer diaA  //Almacena el d?a de nacimiento ingresado
 	Si diaA < 1 O diaA > 31 Entonces
 		Escribir 'Ingrese un dia valido'
 	FinSi
 	
+	Escribir 'mes:'
 	//Valida el mes ingresado
 	Leer mesA //Almacena el mes de nacimiento ingresado
 	Si mesA < 1 O mesA > 12 Entonces
@@ -75,6 +77,7 @@ Algoritmo EJ_Grupal
 		FinSi
 	FinSi
 
+	Escribir 'anio:'
 	//Valida el anio actual ingresado
 	Leer anioA
 	Si anioA < 2024 O anioA > 2025 Entonces
@@ -84,21 +87,23 @@ Algoritmo EJ_Grupal
 	aux = anioN MOD 4 //Calcula los anios bisiestos
 	
 	//Cacula la edad en anios, meses y dias
-	Si mesN > mesA  Entonces
-		edadAnios = (anioA-1)-anioN
-		edadMeses = (12-mesN)+(mesA-1)
-		edadDias = (30-diaN)+diaA
-		
-		
-		
+	
+	Si mesN == mesA Entonces
+		edadAnios = (anioA)-anioN
+		edadMeses = mesN-mesA
+		edadDias = (30-diaN)+diaA 
 	SiNo
-		edadAnios = anioA-anioN
-		edadMeses = (mesA - mesN)-1
-		edadDias = (30-diaN)+diaA
-		
+		Si mesN > mesA  Entonces
+			edadAnios = (anioA-1)-anioN
+			edadMeses = (12-mesN)+(mesA-1)
+			edadDias = (30-diaN)+diaA 
+		SiNo
+			edadAnios = anioA-anioN
+			edadMeses = (mesA - mesN)-1
+			edadDias = (30-diaN)+diaA
+		FinSi
 	FinSi
 	
-
 	//Calcula si la persona es mayor de edad o no.
 	Si edadAnios >= 18 Entonces
 		Escribir 'Usted es mayor de edad'
@@ -106,13 +111,11 @@ Algoritmo EJ_Grupal
 		Escribir 'Usted NO es mayor de edad'
 	FinSi
 	
-
 	//Salida por consola
 	Escribir 'Usted tiene la edad de: '
 	Escribir 'anios: ',edadAnios
 	Escribir 'meses: ',edadMeses
 	Escribir 'dias: ',edadDias
-	
 	
 	//Dato extra
 	Si aux == 0 Entonces
