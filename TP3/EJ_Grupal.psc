@@ -6,8 +6,7 @@ Algoritmo EJ_Grupal
 	//Declaraci?n de variables
 	Definir nombre Como Caracter
 	Definir diaN, mesN, anioN, diaA, mesA, anioA, convAniosDiasN, convAniosDiasA Como Entero
-	Definir convMesesDiasN, convMesesDiasA, aux Como Entero
-	Definir edadAnios, edadMeses Como Real
+	Definir convMesesDiasN, convMesesDiasA, aux, edadAnios, edadMeses Como Entero
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
 	Leer nombre  //Almacena en memoria el nombre ingresado
