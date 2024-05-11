@@ -30,14 +30,14 @@ Algoritmo EJ_Grupal
 	FinSi
 	Si mesN==4 O mesN==6 O mesN==9 O mesN==11 Entonces
 		Si diaN > 30 Entonces
-			Escribir 'Ingrese un dia y un mes validos'
+			Escribir 'Ingrese un dia valido'
 		FinSi
 	FinSi
 	
 	//Valida el mes de febrero
 	Si mesN==2 Entonces
 		Si diaN >30 Entonces
-			Escribir 'Ingrese un dia y un mes validos:'
+			Escribir 'Ingrese un dia valido:'
 		FinSi
 	FinSi
 
@@ -66,14 +66,14 @@ Algoritmo EJ_Grupal
 	FinSi
 	Si mesA==4 O mesA==6 O mesA==9 O mesA==11 Entonces
 		Si diaA > 30 Entonces
-			Escribir 'Ingrese un dia y un mes validos'
+			Escribir 'Ingrese un dia valido'
 		FinSi
 	FinSi
 	
 	//Valida el mes de febrero
 	Si mesA==2 Entonces
 		Si diaA >30 Entonces
-			Escribir 'Ingrese un dia y un mes validos:'
+			Escribir 'Ingrese un dia valido:'
 		FinSi
 	FinSi
 
