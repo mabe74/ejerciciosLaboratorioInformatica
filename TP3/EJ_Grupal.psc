@@ -104,17 +104,15 @@ Algoritmo EJ_Grupal
 	FinSi
 	
 	//Calcula si la persona es mayor de edad o no.
-	Si edadAnios >= 18 Entonces
+	Si cantAnios >= 18 Entonces
 		Escribir 'Usted es mayor de edad'
 	SiNo
 		Escribir 'Usted NO es mayor de edad'
 	FinSi
 	
 	//Salida por consola
-	Escribir 'Usted tiene la edad de: '
-	Escribir 'anios: ',cantAnios
-	Escribir 'meses: ',cantMeses
-	Escribir 'dias: ',cantDias
+	Escribir 'Usted tiene la edad de: ', cantAnios, ' anios ', cantMeses, ' meses ', 'y ', cantDias, ' dias'
+
 	
 	//Salida por consola. Dato extra, agregado mio.
 	Si aux == 0 Entonces
