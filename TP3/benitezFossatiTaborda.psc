@@ -13,7 +13,7 @@ Algoritmo benitezFossatiTaborda
 	
     //Declaracion de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux1, aux2, diasFraccionados, cantAnios, cantMeses, cantMeses1, cantDias Como Entero
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux1, aux2, auxBis, diasFraccionados, cantAnios, cantMeses, cantMeses1, cantDias Como Entero
 
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
@@ -92,7 +92,7 @@ Algoritmo benitezFossatiTaborda
 		Escribir 'Ingrese un anio valido'
 	FinSi
 
-	aux1 = anioN MOD 4 //Calcula los anios bisiestos
+	auxBis = anioN MOD 4 //Calcula los anios bisiestos
 	
 	//Cacula la edad en anios, meses y dias
 	Si mesN == mesA Entonces
@@ -111,12 +111,12 @@ Algoritmo benitezFossatiTaborda
 			cantMeses = (12-mesN)+(mesA-1)+aux2
 		SiNo
 			cantAnios = anioA-anioN
-			cantMeses = (mesA - mesN)-1
+			//cantMeses = (mesA - mesN)-1
 			cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
 			aux1=cantDias MOD 30
 			diasFraccionados = aux1
 			aux2 = trunc(cantDias / 30)
-			
+			cantMeses = ((12-mesN)+(mesA-1)-1)+aux2
 		FinSi
 	FinSi
 	
@@ -133,7 +133,7 @@ Algoritmo benitezFossatiTaborda
 
 	
 	//Salida por consola. Dato extra, agregado mio.
-	Si aux1 == 0 Entonces
+	Si auxBis == 0 Entonces
 		Escribir 'Usted nacio en un anio bisiesto: ', anioN
 	SiNo
 		Escribir 'Usted nacio en un anio NO bisiesto: ', anioN
