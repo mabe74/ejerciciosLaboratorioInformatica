@@ -13,7 +13,7 @@ Algoritmo benitezFossttiTaborda
 	
     //Declaracion de variables
 	Definir nombre Como Caracter
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux, cantAnios, cantMeses, cantDias Como Entero
+	Definir diaN, mesN, anioN, diaA, mesA, anioA, aux1, aux2, aux3, cantAnios, cantMeses, cantDias Como Entero
 
 	
 	Escribir 'Ingrese su nombre: ' //Pide ingresar el nombre del usuario
@@ -92,18 +92,45 @@ Algoritmo benitezFossttiTaborda
 		Escribir 'Ingrese un anio valido'
 	FinSi
 
-	aux = anioN MOD 4 //Calcula los anios bisiestos
+	aux1 = anioN MOD 4 //Calcula los anios bisiestos
 	
 	//Cacula la edad en anios, meses y dias
 	Si mesN == mesA Entonces
 		cantAnios = (anioA)-anioN
 		cantMeses = mesN-mesA
 		cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4)) //Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+		
+		aux2=cantDias MOD 30
+		aux3 = trunc(cantDias / 30)
+		
+		
+		
 	SiNo
 		Si mesN > mesA  Entonces
 			cantAnios = (anioA-1)-anioN
-			cantMeses = (12-mesN)+(mesA-1)
-			cantDias = ((30-diaN)+diaA) + (trunc(cantAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+			
+			
+			
+			
+			cantDias = ((30-diaN)+diaA)+(trunc(cantAnios/4))//Calcula los dias sobrantes y agrega los dias de los anios bisiestos
+			
+			
+			aux2=cantDias MOD 30
+			
+			aux4 = aux2
+			
+			
+			
+			aux3 = trunc(cantDias / 30)
+			cantMeses = (12-mesN)+(mesA-1)+aux3
+			
+			
+			//cantMeses = (12-mesN)+(mesA-1)
+			
+			
+			
+			
+			
 		SiNo
 			cantAnios = anioA-anioN
 			cantMeses = (mesA - mesN)-1
@@ -120,11 +147,11 @@ Algoritmo benitezFossttiTaborda
 	
 	
 	//Salida por consola
-	Escribir 'Usted tiene la edad de: ', cantAnios, ' anios ', cantMeses, ' meses ', 'y ', cantDias, ' dias'
+	Escribir 'Usted tiene la edad de: ', cantAnios, ' anios ', cantMeses, ' meses ', 'y ', aux4, ' dias'
 
 	
 	//Salida por consola. Dato extra, agregado mio.
-	Si aux == 0 Entonces
+	Si aux1 == 0 Entonces
 		Escribir 'Usted nacio en un anio bisiesto: ', anioN
 	SiNo
 		Escribir 'Usted nacio en un anio NO bisiesto: ', anioN
