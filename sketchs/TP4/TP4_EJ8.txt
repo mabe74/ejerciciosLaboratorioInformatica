@@ -1,0 +1,30 @@
+TP4_EJ8
+
+//8) Calcular el número de pulsaciones que debe tener una persona por cada 10 segundos de
+//ejercicio aeróbico; la fórmula que se aplica cuando el sexo es femenino
+//es: num_pulsaciones = (220 − edad)/10 y si el sexo es masculino: num_pulsaciones =
+//(210 − edad)/10.
+
+
+num_pulsaciones, edad: Z
+genero: C[1]
+
+
+Escribir 'Ingrese la edad: '
+Leer edad
+
+Escribir 'Ingrese el genero F o M: '
+Leer genero
+
+Segun genero hacer
+	
+	'F':  num_pulsaciones = (220 − edad)/10
+	      Escribir 'El número de pulsaciones es: ', num_pulsaciones
+
+	'M':  num_pulsaciones = (210 − edad)/10
+	      Escribir 'El número de pulsaciones es: ', num_pulsaciones
+
+En cualquier otro caso: Escribir "Ingrese un dato válido"
+FinSegun
+
+FinAlgoritmo
