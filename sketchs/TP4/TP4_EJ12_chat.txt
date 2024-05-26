@@ -1,0 +1,47 @@
+TP4_EJ12
+
+//12)Ayude a un estudiante de electrónica básica a determinar el resultado de la compuerta lógica
+//AND y la compuerta NOR. Los valores lógicos que requiere ingresarse o mostrarse son las letras (v , f )
+//o sus mayúsculas. Si el usuario se equivoca al brindar entradas, el algoritmo le informa el error
+//apropiadamente y finaliza.
+
+
+Inicio
+    Definir variable A como Caracter
+    Definir variable B como Caracter
+    Definir variable AND_Resultado como Caracter
+    Definir variable NOR_Resultado como Caracter
+
+    Escribir "Ingrese el primer valor lógico (v, V, f, F):"
+    Leer A
+    Escribir "Ingrese el segundo valor lógico (v, V, f, F):"
+    Leer B
+
+    // Convertir a minúsculas para simplificar la validación
+    A <- Minusculas(A)
+    B <- Minusculas(B)
+
+    // Validar entradas
+    Si (A != 'v' y A != 'f') o (B != 'v' y B != 'f') Entonces
+        Escribir "Error: Entrada no válida. Solo se aceptan 'v', 'V', 'f', 'F'."
+        Fin
+    FinSi
+
+    // Calcular el resultado de la compuerta AND
+    Si (A == 'v' y B == 'v') Entonces
+        AND_Resultado <- 'v'
+    Sino
+        AND_Resultado <- 'f'
+    FinSi
+
+    // Calcular el resultado de la compuerta NOR
+    Si (A == 'f' y B == 'f') Entonces
+        NOR_Resultado <- 'v'
+    Sino
+        NOR_Resultado <- 'f'
+    FinSi
+
+    // Mostrar resultados
+    Escribir "Resultado de la compuerta AND: ", AND_Resultado
+    Escribir "Resultado de la compuerta NOR: ", NOR_Resultado
+Fin

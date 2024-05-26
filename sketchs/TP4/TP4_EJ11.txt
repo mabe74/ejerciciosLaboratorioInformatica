@@ -1,0 +1,56 @@
+TP4_EJ11
+
+//11) Un estudiante necesita calcular el valor del área de una figura geométrica. Las figuras geométricas
+//disponibles son el triángulo, circulo, rectángulo y un hexágono.
+
+
+area, base, altura, radio, lado, apotema: R
+figura: Z
+
+comienzo
+
+Escribir 'Ingrese una figura geométrica: '
+Escribir '(1) Triángulo'
+Escribir '(2) Circulo'
+Escribir '(3) Rectángulo'
+Escribir '(4) Hexágono'
+Leer figura
+
+
+Segun figura hacer
+
+	1: Escribir 'Ingrese la base del triángulo: '
+	   Leer base
+	   Escribir 'Ingrese la altura del triángulo: '
+	   Leer altura
+	   area= (base * altura) / 2
+	   Escribir 'El área del triángulo es: ', area
+
+	2: Escribir 'Ingrese el radio del círculo: '
+	   Leer radio
+	   area= (radio * radio) * 3.14
+	   Escribir 'El área del círculo es: ', area
+
+	3: Escribir 'Ingrese la base del rectágulo :'
+           Leer base
+	   Escribir 'Ingrese la altura del rectágulo: '
+	   Leer altura
+	   area= base * altura
+	   Escribir 'El área del rectagulo es: ', area
+
+	4: Escribir 'Ingrese el lado del hexágono: '
+	   Leer lado
+	   Escribir 'Ingrese el apotema del hexágono: '
+	   Leer apotema
+	   area= (lado * 6 * apotema) / 2
+	   Escribir 'El área del hexágono es: ', area
+
+En cualquier otro caso Escribir 'Ingrese un número del 1 al 4 inclusive'
+FinSegun
+FinAlgoritmo
+
+
+
+
+
+

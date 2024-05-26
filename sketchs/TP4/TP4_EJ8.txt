@@ -9,6 +9,7 @@ TP4_EJ8
 num_pulsaciones, edad: Z
 genero: C[1]
 
+comienzo
 
 Escribir 'Ingrese la edad: '
 Leer edad
@@ -28,3 +29,5 @@ En cualquier otro caso: Escribir "Ingrese un dato válido"
 FinSegun
 
 FinAlgoritmo
+
+
