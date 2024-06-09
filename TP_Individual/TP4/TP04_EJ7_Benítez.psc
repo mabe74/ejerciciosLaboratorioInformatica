@@ -1,0 +1,47 @@
+Algoritmo TP4_EJ7
+	
+	//7) En un juego de preguntas a las que se responde Si o No gana quien responda correctamente
+	//las tres preguntas. Si se responde mal a cualquiera de ellas ya no se pregunta la siguiente y
+	//termina el juego. Las preguntas son:
+	// ¿Colon descubrió América?
+	// ¿La independencia de México fue en el año 1810?
+	//¿The Doors fue un grupo de rock Americano?
+	
+	Definir respuesta Como Caracter
+	
+	Escribir '¿Colon descubrió América?'
+	Leer respuesta
+	Si respuesta = 'si' entonces
+		Escribir '¿La independencia de México fue en el año 1810?' 
+		Leer respuesta
+		Si respuesta = 'si' entonces
+			Escribir '¿The Doors fue un grupo de rock Americano?'
+			Leer respuesta					
+			Si respuesta = 'si' entonces
+				Escribir 'Usted ganó el juego!!!'
+			SiNo
+				Escribir 'Game over'
+			FinSi
+		SiNo
+			Escribir 'Game over'
+		FinSi
+	SiNo
+		Escribir 'Game over'
+	FinSi
+	
+FinAlgoritmo
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

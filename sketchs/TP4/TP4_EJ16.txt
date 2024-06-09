@@ -1,0 +1,63 @@
+TP4_EJ16
+
+
+16) Solicite los parámetros necesarios para resolver una ecuación de 2do grado por medio de la
+”ecuación cuadrática general”. El algoritmo retornara las soluciones reales (x1 y x2). En caso que
+la ecuación no tenga solución, debe justificar el motivo que no permite resolverla. Pruebe su
+solución con las siguientes ecuaciones: 2𝑋 2 − 5𝑋 − 3 = 0 0𝑋 2 + 2𝑋 − 1 = 0 1𝑋 2 + 𝑋 + 1 = 0
+
+
+a, b, c: Z
+
+x1, x2, raiz: R
+
+
+Escribir 'Ingrese el coeficiente B: '
+Leer b
+
+
+Escribir 'Ingrese el coeficiente A: '
+Leer a
+
+Escribir 'Ingrese el término independiente C: '
+Leer c
+
+
+raiz <- ((b*b)-4*a*c)
+
+Si raiz > 0 Entonces
+	x1<- (b + raiz1) / 2*a
+	Escribir 'X1= ', x1
+SiNo
+	Escribir 'Error, el argumento de la raíz es negativo'
+
+FinSi
+
+Si raiz > 0 Entonces
+	x1<- (b - raiz) / 2*a
+	Escribir 'X2= ', x2
+SiNo
+	Escribir 'Error, el argumento de la raíz es negativo'
+
+FinSi
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

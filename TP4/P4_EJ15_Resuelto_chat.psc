@@ -14,7 +14,7 @@ Algoritmo P4_EJ15_Resuelto_chat
 	
 	
 	//Inicio
-    Definir horas, min, seg, totalSeg como Entero
+    Definir horas, min, seg, totalSeg, nuevaHora,nuevaMin, nuevaSeg como Entero
     Definir periodo Como Caracter
 	
     // Solicitar la hora actual
@@ -38,8 +38,7 @@ Algoritmo P4_EJ15_Resuelto_chat
 	
     // Convertir de nuevo a horas, minutos y segundos
     nuevaHora <- (totalSeg / 3600) % 24
-    nuevaMinutos <- (totalSeg % 3600) / 60
-    nuevaSegundos <- totalSeg % 60
+    
 	
     // Determinar el nuevo periodo (am/pm)
     Si nuevaHora >= 12 Entonces

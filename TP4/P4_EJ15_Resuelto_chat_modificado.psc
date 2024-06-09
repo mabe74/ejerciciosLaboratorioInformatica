@@ -1,6 +1,4 @@
-
-	
-	Algoritmo P4_EJ15_Resuelto_chat_modificado
+Algoritmo P4_EJ15_Resuelto_chat_modificado
 		
 		//
 		
